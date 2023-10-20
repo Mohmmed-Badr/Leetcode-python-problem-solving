@@ -1,0 +1,9 @@
+n = len(nums)
+        expected_sum = 0
+        actual_sum = 0
+        for i in range(n+1):
+            expected_sum += i
+        for num in nums:
+            actual_sum += num
+        diff = expected_sum - actual_sum
+        return diff
